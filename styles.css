@@ -1,0 +1,93 @@
+@keyframes gradientBackground {
+    0% {
+        background-color: #c9c9c9;
+    }
+    50% {
+        background-color: #787878;
+    }
+    100% {
+        background-color: #343434;
+    }
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: rgb(73, 73, 73);
+
+    margin: 0;
+
+    animation: gradientBackground 10s ease infinite;
+}
+
+#area-login{
+    
+    width: 400px;
+    height: 400px;
+
+    padding: 1rem;
+
+    border: solid black 0.25rem;
+    border-radius: 1rem;
+
+    background-color: rgba(179, 179, 179, 0.9)
+}
+
+#area-login > h1{
+    text-align: center;
+
+    margin: 2rem auto;
+}
+
+#area-login > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.funcoes-extras{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+input, button{
+    text-align: start;
+
+    border: solid black 0.1rem;
+    border-radius: 0.5rem;
+
+    padding: 0.2rem 1rem;
+
+    background-color: rgb(204, 212, 210);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button{
+    transition: background-color 0.3, transform 0.2s;
+}
+
+button:hover{
+    background-color: rgb(172, 172, 172);
+    transform: scale(1.05);
+}
+
+i{
+    margin: 0 0.2rem;
+    transition: transform 0.2s;
+}
+
+i:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
